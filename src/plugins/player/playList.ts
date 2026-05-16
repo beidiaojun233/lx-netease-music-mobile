@@ -242,12 +242,6 @@ const updateMetaInfo = async (mInfo: LX.Player.MusicInfo, lyric?: string) => {
   const realSongName = mInfo.name ?? 'Unknow'
   const realSinger = mInfo.singer ?? ''
   const realAlbum = mInfo.album ?? ''
-  void TrackPlayer.updateNowPlayingTitles(
-    (state.prevDuration || 0) * 1000,
-    realSongName,
-    realSinger,
-    realAlbum,
-  )
 
   // Update home screen widget
   const widgetTitle = mInfo.name ?? 'LX-N Music'
