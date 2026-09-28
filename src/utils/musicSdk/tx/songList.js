@@ -194,7 +194,7 @@ export default {
   //     source: 'tx',
   //   }
   // },
-  filterList({ content }, page) {
+  funtion filterList({ content }, page) {
     // console.log(content.v_item)
     return {
       list: content.v_item.map(({ basic }) => ({
