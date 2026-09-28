@@ -174,7 +174,7 @@ export default {
     })
   },
 
- filterList(data, page) {
+ //filterList(data, page) {
   //   return {
   //     list: data.v_playlist.map(item => ({
   //       play_count: formatPlayCount(item.access_num),
@@ -194,7 +194,7 @@ export default {
   //     source: 'tx',
   //   }
   // },
-  funtion filterList({ content }, page) {
+  filterList({ content }, page) {
     // console.log(content.v_item)
     return {
       list: content.v_item.map(({ basic }) => ({
